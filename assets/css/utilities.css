@@ -1,0 +1,147 @@
+/* Types */
+
+.titleFont {
+  font-family: Peace Sans, sans-serif;
+}
+
+.pageTitle {
+  font-size: clamp(2.375rem, 0.804rem + 7.857vw, 3.75rem);
+  line-height: 1;
+  font-weight: 700;
+  margin-block: 20px;
+  text-transform: capitalize;
+  font-family: var(--fontTitle);
+  font-weight: 400;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-block: 20px;
+  font-family: var(--fontTitle);
+  font-weight: 400;
+}
+
+.topicTitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-block: 10px;
+  font-family: var(--fontTitle);
+  font-weight: 400;
+}
+
+.topicTitle2 {
+  font-size: 1.5rem;
+  line-height: 1.333;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--orange);
+}
+
+.screenText {
+  font-size: 1.125rem;
+  line-height: 1.66;
+}
+
+@media (min-width: 600px) {
+  .pageTitle {
+    font-size: 3.75rem;
+  }
+}
+
+/* Containers */
+
+.cbase {
+  width: 100%;
+  max-width: var(--containerBase);
+  padding: 0 8vw;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+@media (max-width: 600px) {
+  .cbase {
+    padding: 0 8vw;
+  }
+}
+
+/* Container query */
+
+.inline-size {
+  container-type: inline-size;
+}
+
+/* Colors */
+
+.white {
+  color: white;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.purple {
+  color: var(--purple);
+}
+
+.brown {
+  color: var(--brown);
+}
+
+.green {
+  color: var(--green);
+}
+
+/* Shadows */
+
+.shadow-text {
+  text-shadow: var(--shadowText);
+}
+
+/* Items */
+
+.items-1 {
+  display: flex;
+  column-gap: 1rem;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Grid */
+
+.grid2cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap, 2rem);
+  align-items: stretch;
+}
+
+@media (min-width: 601px) {
+  .grid2cols {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.baseGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: min(4vw, 30px);
+}
+
+@media (max-width: 600px) {
+  .baseGrid {
+    gap: min(4vw, 15px);
+  }
+}
+
+.figureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}

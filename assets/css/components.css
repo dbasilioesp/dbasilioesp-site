@@ -1,0 +1,224 @@
+/* 
+* Buttons
+* Box
+* Grids
+* Links
+* Post
+*/
+
+/* Buttons */
+
+.baseButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--purple);
+  color: black;
+  height: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--fontText);
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  padding: 0 15px;
+  gap: 5px;
+}
+
+.baseButton:hover {
+  /* background-color: var(--orange); */
+}
+
+.greenButton {
+  background-color: var(--green);
+}
+
+.blackButton {
+  background-color: var(--darkgrey);
+  color: white;
+}
+
+.outlineButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border: 2px solid black;
+  height: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--fontText);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  padding: 0 15px;
+  gap: 5px;
+}
+
+.smallButton {
+  font-size: 16px;
+  height: 45px;
+}
+
+/* Box */
+
+.colorbox {
+  background-color: var(--orange);
+  border-radius: 6px;
+  padding: 30px 40px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .colorbox {
+    padding: 20px;
+  }
+}
+
+/* Grids */
+
+.baseGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: min(4vw, 30px);
+}
+
+@media (max-width: 600px) {
+  .baseGrid {
+    gap: min(4vw, 15px);
+  }
+}
+
+.figureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Link */
+
+.link {
+  color: var(--orange);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Avatar */
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 480px;
+  max-height: 480px;
+  width: 100%;
+  height: 100%;
+  border-radius: 480px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* Post */
+
+.article *:is(p, h1, h2, h3, a) {
+  /* font-family: Roboto; */
+}
+
+.article p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: Roboto;
+  letter-spacing: 0.2px;
+}
+
+.article h1 {
+  font-size: 1.85rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-block: 20px;
+}
+
+.article h1:not(:first-child) {
+  margin-top: 60px;
+}
+
+.article h2 {
+  font-size: 1.6rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.article h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.article h2 a {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+.article blockquote {
+  color: var(--purple);
+  font-weight: 500;
+  font-style: italic;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.article blockquote p {
+  font-weight: inherit;
+}
+
+.article ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.article li {
+  list-style: disc;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.history {
+  max-width: 140ch;
+  text-align: justify;
+}
+
+.history *:is(i, a, p, h1, h2, h3) {
+  font-family: Libre Baskerville;
+}
+
+.history p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.article a {
+  color: var(--yellow);
+}

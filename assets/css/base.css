@@ -1,0 +1,48 @@
+/* Load fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: "Peace Sans";
+  src:
+    local("Peace Sans"),
+    url("~/assets/fonts/Peace Sans.otf") format("opentype")
+}
+
+:root {
+  /* Fonts */
+  --fontTitle: Peace Sans;
+  --fontText: Roboto;
+
+  /* Spaces */
+  /* --headerHeight: 110px; */
+  --container: 1110px;
+
+  /* Colors */
+  --brown: #886767;
+  --purple: #ACADE5;
+  --green: #52DA86;
+  --blue: #454DEF;
+  --pink: #EF457B;
+  --yellow: #F29909;
+  --darkgrey: #303030;
+
+  /* Shadows */
+  --shadowText: 0 -2px 44px rgba(0, 0, 0, 0.5);
+
+  /* Overlay */
+  /* --overlayPurple: linear-gradient(to right,
+      color(from var(--purple) srgb r g b / 0.8) 0%,
+      color(from var(--purple) srgb r g b / 0.8) 100%); */
+  --overlayGray: linear-gradient(to right,
+      color(from var(--darkgrey) srgb r g b / 0.8) 0%,
+      color(from var(--darkgrey) srgb r g b / 0.8) 100%);
+  --overlayWhite: linear-gradient(to right,
+      color(from white srgb r g b / 0.1) 0%,
+      color(from white srgb r g b / 0.1) 100%);
+
+  --containerBase: 1400px;
+}
+
+* {
+  font-family: Roboto, sans-serif;
+}
