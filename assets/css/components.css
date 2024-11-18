@@ -114,8 +114,8 @@
   align-items: center;
   background-color: white;
   border-radius: 10px;
-  max-width: 480px;
-  max-height: 480px;
+  max-width: 320px;
+  max-height: 320px;
   width: 100%;
   height: 100%;
   border-radius: 480px;
@@ -128,6 +128,20 @@
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+}
+
+@media (min-width: 600px) {
+  .avatar {
+    max-width: 380px;
+    max-height: 380px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .avatar {
+    max-width: 480px;
+    max-height: 480px;
+  }
 }
 
 /* Post */
