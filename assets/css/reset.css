@@ -60,3 +60,9 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+ul,
+ol {
+  list-style-position: inside;
+  padding-left: 0;
+}

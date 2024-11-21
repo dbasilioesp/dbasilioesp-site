@@ -52,7 +52,13 @@
 
 /* Containers */
 
-.cbase {
+.wideContainer {
+  padding: 0 8vw;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+.centerContainer {
   width: 100%;
   max-width: var(--containerBase);
   padding: 0 8vw;
@@ -61,7 +67,7 @@
 }
 
 @media (max-width: 600px) {
-  .cbase {
+  .centerContainer {
     padding: 0 8vw;
   }
 }

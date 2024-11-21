@@ -142,19 +142,6 @@ const works = [
                 <span v-for="tag in item.tags" :key="tag">{{ tag }}</span>
               </div>
             </div>
-            <!-- <div>
-              <h4 class="myWorks__slideSubTitle">Tecnologias:</h4>
-              <p>
-                {{ item.tech }}
-              </p>
-              <a
-                :href="item.link"
-                class="outlineButton smallButton"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Veja o Site</a
-              >
-            </div> -->
           </Slide>
 
           <template #addons>
@@ -165,7 +152,7 @@ const works = [
       </div>
     </section>
 
-    <section class="techskeys cbase">
+    <section class="techskeys centerContainer">
       <h2 class="sectionTitle">Técnicas do momento</h2>
 
       <div class="grid2cols">
@@ -228,16 +215,16 @@ const works = [
       </div>
     </section>
 
-    <section class="myProjects cbase">
+    <section class="myProjects centerContainer">
       <h2 class="sectionTitle">Meus projetos</h2>
 
       <div class="myProjects__cards grid2cols">
         <NuxtLink
           class="myProjects__cardItem"
-          to="/mini-jogos"
+          to="/jogos-digitais"
           style="--bg: url('/images/space-shooter.webp')"
         >
-          <h3 class="myProjects__cardTitle">Mini-jogos</h3>
+          <h3 class="myProjects__cardTitle">Jogos Digitais</h3>
         </NuxtLink>
         <a
           class="myProjects__cardItem"

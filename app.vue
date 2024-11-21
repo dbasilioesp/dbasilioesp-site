@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  title: "dbasilioesp",
+  title: "DB",
   titleTemplate: "%s",
   meta: [
     {

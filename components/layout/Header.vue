@@ -8,7 +8,7 @@
       </nuxt-link>
       <nav class="header__nav">
         <nuxt-link to="/">Ínicio</nuxt-link>
-        <nuxt-link to="/mini-jogos">Mini-Jogos</nuxt-link>
+        <nuxt-link to="/jogos-digitais">Jogos Digitais</nuxt-link>
         <a
           href="https://taigalivraria.com.br/"
           target="_blank"
