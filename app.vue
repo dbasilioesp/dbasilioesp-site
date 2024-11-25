@@ -1,14 +1,16 @@
 <script setup>
 useHead({
-  title: "DB",
   titleTemplate: "%s",
-  meta: [
-    {
-      name: "description",
-      content:
-        "Desenvolvedor Front-end, sócio da Taiga Livraria, estudioso das artes ocultas de Game Design e Design Gráfico.",
-    },
-  ],
+});
+
+useSeoMeta({
+  title: "Portifólio - David Basilio",
+  ogTitle: "Portifólio - David Basilio",
+  description:
+    "Desenvolvedor Front-end, sócio da Taiga Livraria, estudioso das artes ocultas de Game Design e Design Gráfico.",
+  ogDescription:
+    "Desenvolvedor Front-end, sócio da Taiga Livraria, estudioso das artes ocultas de Game Design e Design Gráfico.",
+  ogImage: "https://dbasilioesp.netlify.app/images/share.webp",
 });
 </script>
 
