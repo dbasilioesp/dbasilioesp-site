@@ -1,7 +1,6 @@
 /* 
 * Buttons
 * Box
-* Grids
 * Links
 * Post
 */
@@ -76,26 +75,6 @@
   .colorbox {
     padding: 20px;
   }
-}
-
-/* Grids */
-
-.baseGrid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: min(4vw, 30px);
-}
-
-@media (max-width: 600px) {
-  .baseGrid {
-    gap: min(4vw, 15px);
-  }
-}
-
-.figureGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
 }
 
 /* Link */
@@ -185,14 +164,20 @@
   margin-bottom: 10px;
 }
 
-.article h2 a {
+.article :is(h2, h3, h4) a {
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
+  color: darkslategray;
+  text-decoration: none;
+}
+
+.article :is(h2, h3, h4):hover a {
+  text-decoration: underline;
 }
 
 .article blockquote {
-  color: var(--purple);
+  color: darkorchid;
   font-weight: 500;
   font-style: italic;
   padding-left: 20px;

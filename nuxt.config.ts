@@ -1,10 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   ssr: true,
   css: ["~/assets/css/main.css", "vue3-carousel/dist/carousel.css"],
-  modules: ["@nuxt/icon"],
+  modules: ["@nuxt/icon", "@nuxt/content"],
   icon: {
     customCollections: [
       {
@@ -21,6 +21,16 @@ export default defineNuxtConfig({
       },
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+      script: [
+        {
+          src: "https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js",
+          defer: true,
+        },
+        {
+          src: "https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js",
+          defer: true,
+        },
+      ],
       link: [
         {
           rel: "icon",
@@ -47,6 +57,10 @@ export default defineNuxtConfig({
           rel: "manifest",
           href: "/favicon/safari-pinned-tab.svg",
           color: "#5bbad5",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css",
         },
       ],
       meta: [
