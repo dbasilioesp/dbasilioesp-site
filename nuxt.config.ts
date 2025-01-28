@@ -50,15 +50,6 @@ export default defineNuxtConfig({
           href: "/favicon/apple-touch-icon.png",
         },
         {
-          rel: "manifest",
-          href: "/favicon/site.webmanifest",
-        },
-        {
-          rel: "manifest",
-          href: "/favicon/safari-pinned-tab.svg",
-          color: "#5bbad5",
-        },
-        {
           rel: "stylesheet",
           href: "https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css",
         },

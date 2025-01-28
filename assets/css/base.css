@@ -4,8 +4,8 @@
 @font-face {
   font-family: "Peace Sans";
   src:
-    local("Peace Sans"),
-    url("~/assets/fonts/Peace Sans.otf") format("opentype")
+    /* local("Peace Sans"), */
+    url("~/assets/fonts/PeaceSans.otf") format("opentype")
 }
 
 :root {
