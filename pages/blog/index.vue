@@ -8,6 +8,11 @@ const { data: posts } = await useAsyncData("blog", () =>
   queryCollection("blog").all()
 );
 
+// const { data: posts } = await useAsyncData("blog", () =>
+//   queryContent("blog").find()
+// );
+// console.log(posts.value);
+
 const breads = [{ link: "/blog", label: "Blog" }];
 
 function getDefaultImage(image) {

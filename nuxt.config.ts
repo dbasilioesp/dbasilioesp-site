@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
   css: ["~/assets/css/main.css", "vue3-carousel/dist/carousel.css"],
-  modules: ["@nuxt/icon", "@nuxt/content"],
+  modules: ["@nuxt/icon", "@nuxt/content", "@nuxt/image"],
   icon: {
     customCollections: [
       {
@@ -64,11 +64,6 @@ export default defineNuxtConfig({
           content: "#da532c",
         },
       ],
-    },
-  },
-  hooks: {
-    "prerender:routes"({ routes }) {
-      routes.clear(); // Do not generate any routes (except the defaults)
     },
   },
 });

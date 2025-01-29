@@ -5,6 +5,12 @@ const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection("blog").path(route.path).first();
 });
 
+useSeoMeta({
+  title: page.value?.title,
+  description: page.value?.description,
+  ogImage: page.value?.image,
+});
+
 onMounted(() => {
   setTimeout(() => {
     renderMathInElement(document.body, {
@@ -40,7 +46,7 @@ code {
   /* --shiki-font-style: italic; */
   font-family: "Courier New", Courier, monospace;
   font-size: 14px;
-  border: 44px solid slategrey;
+  border: 10px solid slategrey;
   display: block;
   border-radius: 8px;
   overflow: auto;
@@ -69,5 +75,6 @@ code span {
   margin-top: 160px;
   max-width: 110ch;
   margin-inline: auto;
+  padding-bottom: 100px;
 }
 </style>
