@@ -1,0 +1,68 @@
+:root {
+  /* --surface: oklch(50% 1 200);
+        --surface2: oklch(from var(--surface) 30% c h); */
+  --surface: oklch(30% 0 0);
+  --surface2: oklch(from var(--surface) 10% c h);
+}
+
+@property --pulse {
+  syntax: "<percentage>";
+  initial-value: 15%;
+  inherits: true;
+}
+
+body {
+  background-color: oklch(50% 0.5 200);
+  background: linear-gradient(to left top, var(--surface), var(--surface2));
+  background: radial-gradient(var(--surface) var(--pulse), var(--surface2));
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font: 30px sans-serif;
+  overflow: hidden;
+  animation: pulse 2400ms linear infinite alternate;
+}
+
+@keyframes pulse {
+  to {
+    --pulse: 25%;
+  }
+}
+
+#debug {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.buttonPlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border: 0;
+  border-radius: 4px;
+  background-color: oklch(18% 0.1 0);
+  box-shadow: 1px 1px 1px oklch(80% 0.1 0);
+  color: white;
+}
+
+.sectionCredits {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+}
+
+.textCredit {
+  font-size: 0.75rem;
+  color: oklch(50% 0.1 0);
+
+  a {
+    color: oklch(70% 0.1 0);
+  }
+}
