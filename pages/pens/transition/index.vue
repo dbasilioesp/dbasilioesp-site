@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import "./styles/main.css";
+import "@/assets/css/pen-transition/main.css";
 
-import { Panel } from "./scripts/Panel";
-import { Transition } from "./scripts/Transition";
+import { Panel } from "@/utils/pen-transition/Panel";
+import { Transition } from "@/utils/pen-transition/Transition";
 
 definePageMeta({
   layout: "blank",

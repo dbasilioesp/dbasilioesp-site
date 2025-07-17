@@ -1,5 +1,5 @@
 import { Particle } from "./Particle";
-import SOUND_PATH from "../assets/skandinav-metal-epic-guitar-riff_175bpm_E_minor.ogg";
+import SOUND_PATH from "@/assets/audios/skandinav-metal-epic-guitar-riff_175bpm_E_minor.ogg";
 
 export class Panel {
   #sliderId = "#max";
