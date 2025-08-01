@@ -8,15 +8,7 @@ const { data: posts } = await useAsyncData("blog", () =>
   queryCollection("blog").all()
 );
 
-// const { data: posts } = await useAsyncData("blog", () =>
-//   queryContent("blog").find()
-// );
-// console.log(posts.value);
-
-const breads = [{ link: "/blog", label: "Blog" }];
-
 function getDefaultImage(image) {
-  console.log(image);
   return image || DefaultImage;
 }
 </script>
@@ -49,11 +41,6 @@ function getDefaultImage(image) {
 </template>
 
 <style scoped>
-.post {
-  margin-top: 160px;
-  /* container: post / inline-size; */
-}
-
 .post__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -70,6 +57,8 @@ function getDefaultImage(image) {
   font-size: 1.5rem;
   line-height: 1.2;
   font-weight: bold;
+  color: var(--accent-color);
+  font-family: var(--fontSerif);
 }
 
 .post__description {
@@ -82,6 +71,7 @@ function getDefaultImage(image) {
   height: 280px;
   margin-bottom: 10px;
   overflow: hidden;
+  border-radius: 6px;
 }
 
 .post__imagebox img {

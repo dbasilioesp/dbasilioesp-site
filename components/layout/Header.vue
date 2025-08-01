@@ -1,11 +1,25 @@
 <script setup></script>
 
 <template>
-  <header class="header">
+  <!-- <header class="header">
     <div class="header__inn">
       <nuxt-link to="/">
         <Icon name="icon:logo" class="header__logo" />
       </nuxt-link>
+      <nav class="header__nav">
+        <nuxt-link to="/blog">Blog</nuxt-link>
+        <nuxt-link to="/jogos-digitais">Jogos Digitais</nuxt-link>
+        <a
+          href="https://taigalivraria.com.br/"
+          target="_blank"
+          rel="noreferrer noopener"
+          >Taiga Livraria</a
+        >
+      </nav>
+    </div>
+  </header> -->
+  <header class="header">
+    <div class="header__inn">
       <nav class="header__nav">
         <nuxt-link to="/blog">Blog</nuxt-link>
         <nuxt-link to="/jogos-digitais">Jogos Digitais</nuxt-link>

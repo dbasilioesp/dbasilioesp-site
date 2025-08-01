@@ -93,7 +93,7 @@ const engines = [
       <div class="jD__card" v-for="game in engine.games" :key="game.title">
         <img :src="game.image" :alt="game.title" />
         <div>
-          <h3 class="jD__cardTitle sectionTitle brown">{{ game.title }}</h3>
+          <h3 class="jD__cardTitle sectionTitle">{{ game.title }}</h3>
           <div>
             <p>{{ game.about }}</p>
             <ul>
@@ -130,7 +130,7 @@ const engines = [
 }
 
 .jD__sectionHeader {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid white;
   text-align: right;
   font-family: var(--fontTitle);
   font-size: 18px;
@@ -148,6 +148,7 @@ const engines = [
 
 .jD__cardTitle {
   margin-top: 0;
+  color: var(--accent-color);
 }
 
 .jD__card img {

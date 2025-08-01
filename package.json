@@ -15,6 +15,7 @@
     "@nuxt/image": "^1.9.0",
     "nuxt": "^3.14.159",
     "vue": "latest",
+    "vue-icons-plus": "^0.1.8",
     "vue-router": "latest",
     "vue3-carousel": "^0.5.1"
   }

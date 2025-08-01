@@ -43,8 +43,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: black;
-  border: 2px solid black;
+  color: white;
+  border: 2px solid white;
   height: 50px;
   font-weight: 500;
   font-size: 20px;
@@ -168,7 +168,7 @@
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
-  color: darkslategray;
+  color: var(--accent-color);
   text-decoration: none;
 }
 

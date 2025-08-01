@@ -46,7 +46,7 @@ code {
   /* --shiki-font-style: italic; */
   font-family: "Courier New", Courier, monospace;
   font-size: 14px;
-  border: 10px solid slategrey;
+  border: 10px solid var(--accent-color);
   display: block;
   border-radius: 8px;
   overflow: auto;
