@@ -14,7 +14,7 @@ function getDefaultImage(image) {
 </script>
 
 <template>
-  <div class="post wideContainer">
+  <div class="post centerContainer">
     <h1 class="pageTitle">Blog</h1>
 
     <div class="post__grid">
@@ -39,57 +39,3 @@ function getDefaultImage(image) {
     </div>
   </div>
 </template>
-
-<style scoped>
-.post__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  column-gap: 50px;
-  row-gap: 30px;
-}
-
-.post__item {
-  position: relative;
-  padding-block: 20px;
-}
-
-.post__title {
-  font-size: 1.5rem;
-  line-height: 1.2;
-  font-weight: bold;
-  color: var(--accent-color);
-  font-family: var(--fontSerif);
-}
-
-.post__description {
-  margin: 0;
-}
-
-.post__imagebox {
-  display: block;
-  width: 100%;
-  height: 280px;
-  margin-bottom: 10px;
-  overflow: hidden;
-  border-radius: 6px;
-}
-
-.post__imagebox img {
-  height: 300px;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  transition: all 200ms ease-out;
-}
-
-.post__item:hover img {
-  scale: 1.05;
-}
-
-@container post (max-width: 680px) {
-  .post__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-  }
-}
-</style>

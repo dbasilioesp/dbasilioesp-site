@@ -1,6 +1,4 @@
 :root {
-  /* --surface: oklch(50% 1 200);
-        --surface2: oklch(from var(--surface) 30% c h); */
   --surface: oklch(30% 0 0);
   --surface2: oklch(from var(--surface) 10% c h);
 }
@@ -48,7 +46,7 @@ body {
   border: 0;
   border-radius: 4px;
   background-color: oklch(18% 0.1 0);
-  box-shadow: 1px 1px 1px oklch(80% 0.1 0);
+  box-shadow: 1px 1px 1px var(--accent);
   color: white;
 }
 

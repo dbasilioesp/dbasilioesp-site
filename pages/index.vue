@@ -2,10 +2,8 @@
 import { SITE_LINKS } from "~/utils/data/links";
 </script>
 
-<!-- <style src="~/assets/css/pages/home.css"></style> -->
-
 <template>
-  <div class="homePage">
+  <div class="page homePage">
     <div class="homePage__hz">
       <div class="homePage__topboard">
         <strong class="homePage__nome">David B. E.</strong>

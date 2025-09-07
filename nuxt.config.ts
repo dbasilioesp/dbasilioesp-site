@@ -36,19 +36,8 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/png",
-          sizes: "32x32",
-          href: "/favicon/favicon-32x32.png",
-        },
-        {
-          rel: "icon",
-          type: "image/png",
           sizes: "16x16",
           href: "/favicon/favicon-16x16.png",
-        },
-        {
-          rel: "apple-touch-icon",
-          sizes: "180x180",
-          href: "/favicon/apple-touch-icon.png",
         },
         {
           rel: "stylesheet",
@@ -65,6 +54,16 @@ export default defineNuxtConfig({
           content: "#da532c",
         },
       ],
+    },
+  },
+  vite: {
+    server: {
+      fs: {
+        allow: [
+          // your custom rules
+          "print-magics/style.css",
+        ],
+      },
     },
   },
 });

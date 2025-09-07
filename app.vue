@@ -1,11 +1,11 @@
 <script setup>
 useHead({
-  titleTemplate: "%s - DB",
+  titleTemplate: "%s - David B.E.",
 });
 
 useSeoMeta({
-  title: "Portifólio",
-  ogTitle: "Portifólio",
+  title: "Início",
+  ogTitle: "Início",
   description:
     "Desenvolvedor Front-end, sócio da Taiga Livraria, estudioso das artes ocultas de Game Design e Design Gráfico.",
   ogDescription:

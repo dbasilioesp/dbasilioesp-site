@@ -4,10 +4,6 @@ import "@/assets/css/pen-transition/main.css";
 import { Panel } from "@/utils/pen-transition/Panel";
 import { Transition } from "@/utils/pen-transition/Transition";
 
-definePageMeta({
-  layout: "blank",
-});
-
 onMounted(() => {
   const panel = new Panel();
   const start = document.querySelector("button");
