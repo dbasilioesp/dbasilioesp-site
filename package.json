@@ -13,6 +13,7 @@
     "@nuxt/content": "^3.0.1",
     "@nuxt/icon": "^1.7.2",
     "@nuxt/image": "^1.9.0",
+    "gsap": "^3.13.0",
     "nuxt": "^3.14.159",
     "vue": "latest",
     "vue-icons-plus": "^0.1.8",

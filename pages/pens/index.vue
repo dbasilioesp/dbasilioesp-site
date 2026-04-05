@@ -8,6 +8,13 @@ const pens = [
     description:
       "Usando canvas e algoritmo de árvore para gerar um labirinto dentro de um raio circular.",
   },
+  {
+    id: "2",
+    title: "Hex Pulse",
+    date: "2025-09-30T00:00:00",
+    path: "/pens/hex-pulse",
+    description: "Usando canvas para desenhar hexagonos coloridos e vibrantes.",
+  },
 ];
 </script>
 
